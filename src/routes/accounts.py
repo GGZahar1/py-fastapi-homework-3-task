@@ -218,7 +218,7 @@ async def complete_reset_password(
 @router.post(
     "/login/",
     response_model=UserLoginResponseSchema,
-    status_code=status.HTTP_201_CREATED
+    status_code=201
 )
 async def login_user(
         login_data: UserLoginRequestSchema,
